@@ -1,0 +1,5 @@
+<!-- <p [ngStyle]="{fontWeight: numVulnerabilities > 9 ? 'bold' : 'normal'}"> -->
+<p [ngStyle]="getParagraphStyle()">
+    <span [ngClass]="{blinking: numVulnerabilities > 9}">{{stSeverity}} Warning:</span>
+    I've found {{numVulnerabilities}} vulnerabilities.
+</p>
