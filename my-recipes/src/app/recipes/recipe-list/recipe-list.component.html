@@ -1,12 +1,12 @@
 <div class="row">
     <div class="col-xs-12">
-        <button class="btn btn-success"></button>
+        <button class="btn btn-success">New Recipe!</button>
     </div>
 </div>
 <hr>
 <div class="row">
     <div class="col-xs-12">
-        <app-recipe-item *ngFor="let element of recipes"[recipe]="element" (recipeSelected)="onRecipeSelected(element)"></app-recipe-item>
+        <app-recipe-item *ngFor="let element of recipes"[recipe]="element" (recipeSelected)="onRecipeSelected($event)"></app-recipe-item>
     </div>
 </div>
 

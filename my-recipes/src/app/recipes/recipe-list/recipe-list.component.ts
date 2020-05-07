@@ -29,6 +29,7 @@ export class RecipeListComponent implements OnInit {
   }
   onRecipeSelected(recipe:Recipe)
   {
+    console.log("list");
     this.recipeWasSelected.emit(recipe);
   }
 }
