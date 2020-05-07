@@ -12,6 +12,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { FormsModule} from '@angular/forms';
 import { HighlightDirective } from './shared/highlight.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HighlightDirective } from './shared/highlight.directive';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    HighlightDirective
+    HighlightDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
